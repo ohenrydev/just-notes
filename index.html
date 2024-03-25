@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Just Notes</title>
+    <meta name="author" content="ohenrydev" />
+    <meta name="description" content="Minimalist notepad app" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#222222" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <form></form>
+      <textarea rows="17" spellcheck="false"></textarea>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+    <script defer>
+      "serviceWorker" in navigator && navigator.serviceWorker.register("sw.js")
+        .then(() => console.log("Service Worker Registered"))
+    </script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  
+  background-color: #222222;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  width: 100%;
+  min-height: 100dvh;
+  min-height: 100vh;
+  font-family: "JetBrains Mono";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.62em;
+  display: block;
+  margin: auto;
+  padding: 2rem 2rem;
+  border: 0;
+  outline: 0;
+  resize: none;
+  z-index: 1;
+  background-color: transparent;
+  scroll-behavior: smooth;
+  overflow: auto;
+  color: #eeeeee;
+}
+@media screen and (min-width: 768px) {
+  textarea {
+    padding: 84px calc((100vw - 565px) / 2.2) 36px;
+  }
+}
